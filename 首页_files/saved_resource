@@ -1,0 +1,5 @@
+.wp-pagenavi{
+font-size:90%;
+margin-top:10px;
+}
+

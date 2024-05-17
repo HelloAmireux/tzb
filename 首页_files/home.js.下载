@@ -1,0 +1,128 @@
+/**
+ * Created by jianping on 2018/5/4.
+ */
+;(function () {
+   /* banner动画*/
+    var bannerAnimate = function () {
+        if ($('#ov-banner').length > 0) {
+
+            $('#ov-banner').waypoint(function (direction) {
+
+                if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+
+                    setTimeout(function () {
+                        $('#ov-banner .to-animate').each(function (k) {
+                            var el = $(this);
+
+                            setTimeout(function () {
+                                el.addClass('fadeInUp animated');
+                            }, k * 200, 'easeInOutExpo');
+
+                        });
+                    }, 200);
+
+
+                    $(this.element).addClass('animated');
+
+                }
+            }, {offset: '80%'});
+
+        }
+    };
+
+    /*feature动画*/
+    var homeAnimate = function () {
+        var $home=$('#ov-feature');
+        if ($home.length > 0) {
+
+            $home.waypoint(function (direction) {
+
+                if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+
+                    setTimeout(function () {
+                        $home.find('.to-animate').each(function (k) {
+                            var el = $(this);
+
+                            setTimeout(function () {
+                                el.addClass('fadeInUp animated');
+                            }, k * 200, 'easeInOutExpo');
+
+                        });
+                    }, 200);
+
+
+                    $(this.element).addClass('animated');
+
+                }
+            }, {offset: '80%'});
+
+        }
+    };
+    var solutionAnimate = function () {
+        var $solution = $('#ov-solutions');
+        if ($solution.length > 0) {
+
+            $solution.waypoint(function (direction) {
+
+                if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+
+                    setTimeout(function () {
+                        $solution.find('.to-animate').each(function (k) {
+                            var el = $(this);
+
+                            setTimeout(function () {
+                                el.addClass('fadeInUp animated');
+                            }, k * 200, 'easeInOutExpo');
+
+                        });
+                    }, 200);
+
+
+                    $(this.element).addClass('animated');
+
+                }
+            }, {offset: '80%'});
+
+        }
+    };
+    var newsAnimate = function () {
+        var $news = $('#ov-news');
+        if ($news.length > 0) {
+
+            $news.waypoint(function (direction) {
+
+                if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+                    clearTimeout();
+                    setTimeout(function () {
+                        $news.find('.to-animate').each(function (k) {
+                            var el = $(this);
+                            clearTimeout();
+                            setTimeout(function () {
+                                el.addClass('fadeInUp animated');
+                            }, k * 200, 'easeInOutExpo');
+
+                        });
+                    }, 200);
+
+
+                    $(this.element).addClass('animated');
+
+                }
+            }, {offset: '80%'});
+
+        }
+    };
+
+
+    // Document on load.
+    $(function(){
+        homeAnimate();
+        bannerAnimate();
+        newsAnimate();
+    });
+
+}());
