@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://webpage.qidian.qq.com/qidian/chatv3/displayManager/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>消息外显展示</title>
+
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="email=no" name="format-detection">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+            }
+            #wrap {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 1px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .target-top {
+                bottom: auto;
+                top: 0 !important;
+                flex-direction: column-reverse !important;
+            }
+            .target-left {
+                right: auto;
+                left: 0 !important;
+                align-items: flex-start !important;
+                padding-left: 4px;
+            }
+            .target-right {
+                padding-right: 4px;
+            }
+            .normal {
+                /* no data */
+            }
+            .top-margin {
+                margin-top: 18px;
+            }
+            .bottom-margin {
+                margin-bottom: 18px;
+            }
+            .rich-text {
+                max-width: 250px;
+                box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+            .rich-text .container {
+                max-height: 50px;
+                overflow: hidden;
+                line-height: 25px;
+                margin: 5px 12px;
+            }
+            .rich-text .container p {
+                /* 一行省略 */
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .img-container {
+                width: 200px;
+                height: 120px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+            }
+            .img-container .img {
+                width: 190px;
+                height: 110px;
+                object-fit: contain;
+            }
+            .img-txt-container {
+                width: 200px;
+                height: 145px;
+                padding: 5px;
+                text-align: center;
+                box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+            }
+            .img-txt-container .summary {
+                width: 190px;
+                text-align: left;
+                padding-left: 5px;
+                margin-bottom: 5px;
+                /* 一行省略 */
+                word-wrap: break-word;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+            }
+            .img-txt-container .small-img {
+                display: inline-block;
+                width: 190px;
+                height: 110px;
+                background-position: 50% 50%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .top-left-zero {
+                border-radius: 0 6px 6px 6px;
+            }
+            .top-right-zero {
+                border-radius: 6px 0 6px 6px;
+            }
+            .bottom-right-zero {
+                border-radius: 6px 6px 0 6px;
+            }
+            .bottom-left-zero {
+                border-radius: 6px 6px 6px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+         <script type="text/javascript">
+            // eslint-disable-next-line no-var
+            var __domain = { chat: 'localhost', admin: 'gateway.qidian.qq.com' };
+        </script>
+        <!--domainEnv-->
+        <script type="text/javascript" src="./qidianMonitor.umd.min.js.下载"></script>
+        <script type="text/javascript" src="./jquery-1.12.4-fixed.min.js.下载"></script>
+        <!--[if (IE 8)|(IE 9)
+            ]><script src="//webpage.qidian.qq.com/qidian/chatClient/release/comp/js/lib/JSON.js"></script
+        ><![endif]-->
+        <script type="text/javascript" src="./display.js.下载"></script>
+    
+
+</body></html>

@@ -1,0 +1,45 @@
+/**
+ * Created by jianping on 2018/5/4.
+ */
+$(function(){
+	
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $('#ov-header-menu').click(function(){
+            $(this).toggleClass('icon-close');
+            $('#ov-header-mobile').slideToggle();
+        })
+
+
+        /*导航悬浮代码*/
+        var $nav = $('.ov-header');
+        //var t = $nav.offset().top;
+        if ($(window).scrollTop()>0) {
+            $nav.addClass('ov-header-float');
+        }else {
+            $nav.removeClass('ov-header-float');
+        }
+        //console.log($(window).scrollTop());
+
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st>0) {
+                $nav.addClass('ov-header-float');
+            }else {
+                $nav.removeClass('ov-header-float');
+            }
+        });
+        var ovFooter = true;
+        $('.ov-footer-nav').find('h3').click(function(){
+            $(this).find('.icon').toggleClass('icon-reduce');
+            if(ovFooter){
+                $(this).parent().css('height','165px')
+                ovFooter = false;
+            }else{
+                $(this).parent().css('height','30px')
+                ovFooter = true;
+            }
+
+        })
+
+})
